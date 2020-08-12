@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+	<script type="text/javascript" src="src/main.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+	
+	<title>Digital Worksheets</title>
+</head>
+
+<body>
+	<div id="toolbox" class="dropzoneDelete">
+		<div id="deleteNotice"><img class="center" src="img/trash.svg" alt="Trash" height="100%"></div>
+		<div id="staticText" class="draggableTool tool staticText"><!--contenteditable>-->
+			Static Text Area
+		</div>
+		<div id="answerBox" class="draggableTool tool answerBox"><!--contenteditable>-->
+			Answer Box
+		</div>
+		<div id="staticTextObject" class="draggable staticText" contenteditable>
+			<div class="handle handleMove" contenteditable="false">M</div>
+			<div class="handle handleDelete" contenteditable="false" onclick="deleteItem()">D</div>
+			<!--<div class="handleSize">S</div>-->
+			Static Text #2
+		</div>
+		<div id="answerBoxObject" class="draggable answerBox"><!--contenteditable>-->
+			<div class="handle handleMove" contenteditable="false">M</div>
+			<!--<div class="handleSize">S</div>-->
+			Answer Box #2
+		</div>
+	</div>
+	<div class="dropzone"></div>
+</body>
+</html>

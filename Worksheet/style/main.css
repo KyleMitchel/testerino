@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toolbox {
+	background-color: grey;
+	width: 100%;
+	padding: 25px;
+}
+
+
+
+.dropzone {
+	background-color: #ccc;
+	border: dashed 4px transparent;
+	padding: 10px;
+	width: 100%;
+	height: 100vh;
+	transition: background-color 0.3s;
+}
+
+.drop-active {
+	border-color: #aaa;
+}
+
+.drop-target {
+	border-color: #fff;
+}
+
+.draggableTool {
+	width: 200px;
+	height: 150px;
+	background-color: white;
+	border: 2px solid darkgrey;
+	border-radius: 25px;
+	padding: 25px;
+	font-family: sans-serif;
+	font-size: 2em;
+	display: inline-block;
+	min-width: 40px;
+	color: #fff;
+	background-color: #29e;
+	border: solid 2px #fff;
+	box-sizing:border-box;
+	touch-action: none;
+	user-select: none;
+	-webkit-transform: translate(0px, 0px);
+			transform: translate(0px, 0px);
+
+	transition: background-color 0.3s;
+}
+
+.draggable {
+	z-index: 1000;
+	width: auto;
+	height: auto;
+	background-color: white;
+	border: 2px solid darkgrey;
+	border-radius: 25px;
+	padding: 25px;
+	font-family: sans-serif;
+	font-size: 2em;
+	display: inline-block;
+	min-width: 40px;
+	color: #fff;
+	background-color: #29e;
+	border: solid 2px #fff;
+	box-sizing:border-box;
+	touch-action: none;
+	user-select: none;
+	-webkit-transform: translate(0px, 0px);
+			transform: translate(0px, 0px);
+
+	transition: background-color 0.3s;
+}
+
+.draggable.can-drop {
+	color: #000;
+	background-color: #4e4;
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+.dragging {
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+
+.visible {
+	visibility: visible !important;
+	opacity: 0.5 !important;
+	transition: opacity 0.5s;
+}
+
+#deleteNotice{
+	background-color: grey;
+	background-color: #ccc;
+	border: dashed 4px transparent;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 200px;
+	margin: -25px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.rotation-handle {
+	padding: 3px 4px;
+	display: table;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background-color: #ff1661;
+	border-radius: 10rem;
+	line-height: 1;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	cursor: move;
+}
+
+.resize-drag {
+	display: inline-block;
+	z-index: 1000;
+	min-width: 40px;
+	color: #fff;
+	background-color: #29e;
+	border: solid 2px #fff;
+	box-sizing:border-box;
+	touch-action: none;
+	user-select: none;
+	-webkit-transform: translate(0px, 0px);
+			transform: translate(0px, 0px);
+
+	transition: background-color 0.3s;
+}
+
+#staticTextObject, #answerBoxObject {visibility: hidden;}
+
+.tool {cursor: move !important;}
+
+.handle {
+	width: 37px;
+	padding: 3px 4px;
+	display: table;
+	position: absolute;
+	left: -45px;
+	top: 0;
+	background-color: #ff1661;
+	border-radius: 10rem;
+	line-height: 1;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+.handleSize {
+	cursor: move;
+}
+
+.handleMove {
+	cursor: move;
+}
+
+.handleDelete {
+	left: -45px;
+	top: 45px;
+	cursor: pointer;
+}
